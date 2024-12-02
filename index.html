@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2024.11.04 Mon 5:29am 49min 40sec</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    
+    .image-container {
+      position: relative;
+      display: inline-block;
+      width: 100vw;
+      height: 100vh; /* Set a fixed height for the container */
+      background: url('images/corebook1.png');
+      background-size: contain; 
+      background-repeat: repeat; /* Prevents tiling */
+      background-position: center; /* Centers the image */
+    }
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+      width: 100vw;
+      height: 100vh; /* Set a fixed height for the container */
+      background: url('images/corebook1.png');
+      background-size: contain; 
+      background-repeat: repeat; /* Prevents tiling */
+      background-position: center; /* Centers the image */
+    }
+
+    .image-container .overlay-text{
+        position: absolute;
+        z-index: 2;
+        mix-blend-mode: difference;
+    }
+
+    .image-container .overlay-text #mediator{
+      position: absolute;
+      top: 2vh;
+      left: 40vw;
+    }
+
+    .image-container .overlay-text #speakera{
+        position: absolute;
+    top: 44vh;
+    left: 4vw;
+    transform: rotate(-88deg);
+    }
+
+    .image-container .overlay-text #speakerb{
+        position: absolute;
+    top: 32vh;
+    left: 70vw;
+    transform: rotate(87deg);
+    }
+  </style>
+</head>
+<body>
+    <img src="images/corebook4.png" id="title">
+    <div class="image-container">
+    <div class="overlay-text">
+        <a id="mediator" href="mediator.html">Mediator</a>
+        <a id="speakera" href="speakera.html">SpeakerA</a>
+        <a id="speakerb" href="speakerb.html">SpeakerB</a>
+    </div>
+  </div>
+</body>
+</html>

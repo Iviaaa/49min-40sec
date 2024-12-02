@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Abordage';
+    src: url('fonts/Abordage-Regular.ttf') format('ttf');
+}
+
+body {
+    font-family: 'Abordage', system-ui;
+    margin: 0;
+    padding: 0;
+}
+
+#frontcover{
+    position: fixed; 
+    z-index: 0; 
+    width: 40vw;
+    height: auto; 
+    transform: translate(-50%, -50%);
+}
+
+#covermask{
+    position: fixed; 
+    top:50vh; 
+    left:50vw;
+    z-index:1; 
+    width: auto;
+    height: 100vh; 
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+#title{
+    position: fixed; 
+    top:50vh; 
+    left:50vw;
+    z-index: 1; 
+    max-width: 100%;
+    width: 100%;
+    height: auto; 
+    transform: translate(-50%, -50%);
+}
+
+a{
+    color: yellow;
+    font-size: clamp(1.5rem, 5vw, 7rem);
+    text-decoration: none;
+}
+
+a:visited {
+    color: yellow;
+    text-decoration: underline;
+  }
+
+.transcript-text{
+    margin: 40px;
+    font-size: 20px;
+    font-family: 'Abordage', system-ui;
+}
+
+.transcript-text .speaker{
+    color: black;
+    background-color: yellow;
+}
+
+.transcript-text .speaker .time{
+    color: black;
+    font-style: italic;
+}
+
+
+.highlight{
+    color: yellow;
+}
+
+.hidden{
+    background-color: white;
+    color:white;
+}
